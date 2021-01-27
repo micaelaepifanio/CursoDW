@@ -1,0 +1,138 @@
+@mixin texto ($fontSize, $letterSpacing, $fontWeight, $color){
+	font-size: $fontSize;
+	letter-spacing: $letterSpacing;
+	font-weight: $fontWeight;
+	color: $color;
+}	
+
+$fondos: (
+	rosa: #F7DDDD,
+	rosaMasClaro: #F9E7E7,
+	salmon: #FA7979,
+);
+
+@each $nombre, $color in $fondos {
+	.fondo-#{$nombre} {
+		background-color: #{$color};
+	}	
+}
+
+body {
+    background-color: #F7DDDD;
+	font-family: 'Quicksand', sans-serif;
+    ul { 
+        list-style-type: none;
+        li { 
+            display: inline-block;
+            a, button{
+				@include texto (14px, 1px, 500, #4C494A);
+                text-decoration: none;
+                list-style-type: none;
+                display: block;
+                padding: 16px;
+                border: solid 1px #E9DFDF;
+                transition: background-color 2s;
+                &:hover {	
+                    background-color: #FA7979;
+                }
+            }
+        }
+    }
+} 
+
+.header__titulo-principal--rosa {
+	@include texto (25px, 1px, 629, #ca9890fc);
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+
+.main__parrafo--negrito {
+	@include texto (18px, 1px, 700, #4C494A);
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+.center {
+	margin: auto;
+	width: 50%;
+	padding: 5px;
+	text-align: center;
+}	
+
+.header__menu--centrado {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}	
+
+.header__icons {
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	img {
+		padding: 3px;
+	}
+}
+
+.presentacion {
+	float: left;
+	width: 50%;
+}
+
+.flex-container{
+ 	display: flex;
+ 	flex-direction: row;
+ 	align-content: center;
+ 	margin-top: 35px;
+ 	margin-bottom: 80px;
+}
+
+.textito {
+	margin-top: 50px;
+	text-align: justify;
+}
+
+.tabla {
+	width: 100%;
+}
+
+.linea {
+	overflow: auto;
+	div {
+		float: left;
+		width: 30%;
+		img{
+			width: 98%;
+		}
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
+	margin-top: 50px;
+	align-items: center;
+	img {
+		width: 200px;
+		transition: transform 2s;
+	}
+}
+
+.transform:hover {
+	transform: scale(1.1,1.1);
+}
+
+
+.btn-primary {
+	color: #4C494A;
+    border-color: #F9E7E7;
+}
+
+.carousel.slide {
+	margin-top: 10px;
+}

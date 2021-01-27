@@ -1,0 +1,112 @@
+.fondo-rosa {
+  background-color: #F7DDDD; }
+
+.fondo-rosaMasClaro {
+  background-color: #F9E7E7; }
+
+.fondo-salmon {
+  background-color: #FA7979; }
+
+body {
+  background-color: #F7DDDD;
+  font-family: 'Quicksand', sans-serif; }
+  body ul {
+    list-style-type: none; }
+    body ul li {
+      display: inline-block; }
+      body ul li a, body ul li button {
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: #4C494A;
+        text-decoration: none;
+        list-style-type: none;
+        display: block;
+        padding: 16px;
+        border: solid 1px #E9DFDF;
+        transition: background-color 2s; }
+        body ul li a:hover, body ul li button:hover {
+          background-color: #FA7979; }
+
+.header__titulo-principal--rosa {
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 629;
+  color: #ca9890fc;
+  text-transform: uppercase;
+  letter-spacing: 10px; }
+
+.main__parrafo--negrito {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #4C494A;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 50px; }
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+  text-align: center; }
+
+.header__menu--centrado {
+  display: flex;
+  width: 90%;
+  margin: auto; }
+
+.header__icons {
+  position: absolute;
+  top: 15px;
+  right: 30px; }
+  .header__icons img {
+    padding: 3px; }
+
+.presentacion {
+  float: left;
+  width: 50%; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin-top: 35px;
+  margin-bottom: 80px; }
+
+.textito {
+  margin-top: 50px;
+  text-align: justify; }
+
+.tabla {
+  width: 100%; }
+
+.linea {
+  overflow: auto; }
+  .linea div {
+    float: left;
+    width: 30%; }
+    .linea div img {
+      width: 98%; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  margin-top: 50px;
+  align-items: center; }
+  .grid img {
+    width: 200px;
+    transition: transform 2s; }
+
+.transform:hover {
+  transform: scale(1.1, 1.1); }
+
+.btn-primary {
+  color: #4C494A;
+  border-color: #F9E7E7; }
+
+.carousel.slide {
+  margin-top: 10px; }
