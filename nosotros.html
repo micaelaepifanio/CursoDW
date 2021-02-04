@@ -9,36 +9,72 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;629&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link rel="stylesheet" href="CSS/pruebacss.css">
 </head>
 <body class="center">
 	<header>
-		<div> 
-			<img src="./imagenes/logo.png" alt="Logo" width="300">
-			<h1 class="titulo-principal">Curry Cuadros</h1>
-			<div class="menu">	
-				<ul>
-				    <li><a href="index.html">Home</a></li>
-				    <li><a href="productos.html">Productos</a></li>
-				    <li><a href="promociones.html">Promociones</a></li>
-				    <li><a href="nosotros.html">Nosotros</a></li>
-				    <li><a href="contacto.html">Contacto</a></li>
-				</ul>
+		<div class="justify-content-center"></div>
+		<a href="index.html"><img src="./imagenes/logo.png" alt="Logo" width="300"></a>
+		<h1 class="header__titulo-principal--rosa vertical-margin animar-titulito">Curry Cuadros</h1>
+			<div class="vertical-margin justify-content-center">	
+				<ul class="no-padding">
+					<li>
+						<a href="index.html">Home</a>
+				    </li>
+				    <li>
+				      	<a href="productos.html">Productos</a>
+				    </li>
+				    <li>
+				      	<a href="promociones.html">Promociones</a>
+				    </li>
+				    <li>
+				      	<a href="nosotros.html">Nosotros</a>
+				    </li>
+				    <li>
+				      	<a href="contacto.html">Contacto</a>
+				    </li>
+				  </ul>
 			</div>
 		</div>
-		<div class="icons"> 
-				<img src="./imagenes/carrito.png" alt="Carrito" width="25">
-				<img src="./imagenes/instagram.png" alt="instagram" width="25">
+		<div class="header__icons"> 
+			<a href="#"> <img src="./imagenes/carrito.png" alt="Carrito" width="35"> </a>
 		</div>
 	</header>
 	<main>
-		<p class="parrafo">Somos un emprendimiento artesanal de cuadros vintage. Trabajamos desde la selección de las maderas y la confección del marco hasta el armado final del producto. Las láminas están especialmente seleccionadas y trabajamos con materiales de alta calidad. Tenemos sede en Vicente Lopez y en Palermo pero hacemos pedidos a todo el país. También hacemos trabajos personalizados. ¡No dudes en contactarnos!</p>
-		<img src="./imagenes/emprendimiento.jpg" alt="Cuadros" width="500">
+		<div class="main__parrafo--negrito container">
+			<div class="row justify-content-md-center">
+				<div class="col-md-6 col-xs-12">
+					<img src="./imagenes/emprendimiento.jpg" alt="Cuadros" width="500">
+				</div>
+				<div class="col-md-6 col-xs-12 align-self-center">
+					<p>Somos un emprendimiento artesanal de cuadros vintage. Trabajamos desde la selección de las maderas y la confección del marco hasta el armado final del producto. Las láminas están especialmente seleccionadas y trabajamos con materiales de alta calidad. Tenemos sede en Vicente Lopez y en Palermo pero hacemos pedidos a todo el país. También hacemos trabajos personalizados. ¡No dudes en contactarnos!</p>
+				</div>
+			</div>
+		</div>
 	</main>
 	<footer> 
-		<div> 
-			<p>Curry Cuadros © 2020 Todos los derechos reservados.</p>
+		<div class="vertical-margin">
+			<img src="./imagenes/instagram.png" alt="instagram">
+			<img src="./imagenes/facebook.png" alt="facebook">
+			<img src="./imagenes/twitter.png" alt="twitter">
+			<div class="row justify-content-md-center vertical-margin">
+					<img src="./imagenes/email.png"  class="pull-right" alt="email" height="25" width="25"><p class="text-left">hola@currycuadros.com</p>
+			</div>	
+			<div class="row justify-content-md-center">
+			
+					<img src="./imagenes/telefono.png" class="pull-right" alt="telefono" height="25" width="25"><p class="text-left">4237-5931</p>
+			
+			</div>	
+			<div class="row justify-content-md-center ">
+			
+					<img src="./imagenes/direccion.png"  class="pull-right" alt="direccion" height="25" width="25"><p class="text-left">El Salvador 3848, Palermo</p>
+			
+			</div>
+			<p class= "texto-footer vertical-margin">Curry Cuadros © 2020 Todos los derechos reservados.</p>
 		</div>
-	</footer>	
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
